@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #6b7280;
+    font-size: 17px;
+}
+
+/* Main cards */
+
+.upload-card,
+.result-card {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+}
+
+.upload-card {
+    text-align: center;
+}
+
+.upload-card h2,
+.result-card h2 {
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+/* Upload area */
+
+.upload-area {
+    border: 2px dashed #cbd5e1;
+    border-radius: 12px;
+    padding: 35px 20px;
+    margin-bottom: 25px;
+    background: #f8fafc;
+}
+
+.upload-area input {
+    display: none;
+}
+
+.upload-area label {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.upload-area label:hover {
+    background: #1d4ed8;
+}
+
+#fileName {
+    margin-top: 15px;
+    color: #64748b;
+}
+
+/* Analyze button */
+
+#analyzeButton {
+    border: none;
+    background: #111827;
+    color: white;
+    padding: 13px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#analyzeButton:hover {
+    background: #374151;
+}
+
+#analyzeButton:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* Status */
+
+#statusMessage {
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+/* Result */
+
+.result-card {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#predictionResult {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.result-details {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.result-details div {
+    background: #f8fafc;
+    border-radius: 10px;
+    padding: 18px 35px;
+    min-width: 200px;
+}
+
+.result-details span {
+    display: block;
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.result-details strong {
+    font-size: 20px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+footer p:first-child {
+    margin-bottom: 5px;
+}
